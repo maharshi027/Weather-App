@@ -11,23 +11,23 @@
         <div class="search">
             <input type="text" placeholder="Enter City Name"
             spellcheck="false">
-            <button><img width="50px" src="search.png" alt=""></button>
+            <button><img width="50px" src="./images/search.png" alt=""></button>
         </div>
         <div class="error"><p>Invalid City Name</p></div>
         <div class="weather">
-            <img class="weather-icon" src="raining.png">
+            <img class="weather-icon" src="./images/raining.png">
             <h1 class="temp">22<sup>o</sup>C</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src="humidity.png">
+                    <img src="./images/humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="wind.png">
+                    <img src="./images/wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -61,15 +61,15 @@
             console.log(data);
             
             if(data.weather[0].main == "Clouds"){
-                weatherIcon.src = '/clouds.png'
+                weatherIcon.src = './images/clouds.png'
             } else if (data.weather[0].main == "Rain"){
-                weatherIcon.src = '/raining.png'
+                weatherIcon.src = './images/raining.png'
             }
              else if (data.weather[0].main == "Clear"){
-                weatherIcon.src = '/clear.png'
+                weatherIcon.src = './images/clear.png'
             }
              else if (data.weather[0].main == "Snow"){
-                weatherIcon.src = '/snow.png'
+                weatherIcon.src = './images/snow.png'
             }
             document.querySelector('.weather').style.display = "block"
             // document.querySelector('.weather').style.display = 'none'
